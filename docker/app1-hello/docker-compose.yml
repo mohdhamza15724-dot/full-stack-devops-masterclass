@@ -1,0 +1,7 @@
+services:
+  hello-py:
+    image: mohdhamza007/app1-python:latest
+    ports:
+      - "3000:3000"
+    environment:
+      - ENV_VALUE=hello-env
