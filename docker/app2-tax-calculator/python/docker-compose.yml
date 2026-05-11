@@ -1,6 +1,6 @@
 services:
   service-a:
-    build: ./python/service-a
+    build: ./service-a
     ports:
       - "3100:3000"
     depends_on:
@@ -10,6 +10,6 @@ services:
 
   
   service-b:
-    build: ./pyhton/service-b
+    build: ./service-b
     ports:
       - "3200:4000"
