@@ -7,7 +7,7 @@ function App() {
   const [loading, setLoading] = useState(false);
 
   // Backend URL
-  const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3000";
+  const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3100";
 
   const calculatePrice = async () => {
     if (!amount) return alert("Enter amount");
