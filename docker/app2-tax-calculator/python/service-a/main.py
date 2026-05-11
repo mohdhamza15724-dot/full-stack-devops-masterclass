@@ -5,7 +5,7 @@ import requests, os, socket
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origin=["http://13.48.238:5173"]
+    allow_origins=["http://13.48.238:5173"]
     allow_methods=["*"]
     allow_headers=["*"]
 )
