@@ -9,7 +9,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 #copy all the local files into /app
 COPY . . 
 # expose port 3000
-EXPOSE 3000
+EXPOSE 4000
 #in simple words it means when container starts run the python file main.py
 CMD [ "python" , "main.py" ]
 
