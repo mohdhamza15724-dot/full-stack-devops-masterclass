@@ -3,6 +3,8 @@ services:
     build: ./service-a
     ports:
       - "3100:3000"
+    depends_on:
+      - service-b
     environment:
       - TAX_SERVICE_URL=http://service-b:4000
 
