@@ -1,6 +1,14 @@
 from flask import Flask, request, jsonify
+from fastapi.middleware.cors import CORSMiddleware
 from flask_cors import CORS
 import requests, os, socket
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origin=["http://13.48.238:5173"]
+    allow_methods=["*"]
+    allow_headers=["*"]
+)
 
 app = Flask(__name__)
 
