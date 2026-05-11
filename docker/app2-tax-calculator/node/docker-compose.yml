@@ -1,0 +1,13 @@
+services:
+  service-a:
+    build: ./service-a
+    ports:
+      - "3100:3000"
+    environment:
+      - TAX_SERVICE_URL=http://service-b:4000
+
+  
+  service-b:
+    build: ./service-b
+    ports:
+      - "3200:4000"
